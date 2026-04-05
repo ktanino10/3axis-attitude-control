@@ -1,5 +1,7 @@
 # 🎲 3軸姿勢制御モジュール（Self-Balancing Cube）
 
+> 🇬🇧 [English version here (README_en.md)](README_en.md)
+
 リアクションホイールを用いた3軸姿勢制御モジュールの制作記録です。  
 立方体が **角（頂点）で自立する** 倒立振子ロボットを、GitHub Copilot CLI を活用しながら設計・実装していきます。
 
