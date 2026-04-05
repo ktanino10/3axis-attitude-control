@@ -35,9 +35,9 @@
 
 | # | 部品名 | 型番/仕様 | 数量 | 参考価格 | 購入先候補 |
 |---|--------|-----------|:---:|------:|------------|
-| 1 | マイコンボード | **Raspberry Pi Pico W** | 1 | ¥1,200 | [秋月電子](https://akizukidenshi.com/catalog/g/g117947/), [スイッチサイエンス](https://www.switch-science.com/) |
-| 2 | 6軸IMUセンサ | **MPU6050モジュール** (GY-521) | 1 | ¥300 | 秋月電子, Amazon |
-| 3 | 電流/電圧センサ | **INA219モジュール** (オプション) | 1 | ¥400 | 秋月電子, Amazon |
+| 1 | マイコンボード | **Raspberry Pi Pico W** | 1 | ¥1,240 | [秋月電子](https://akizukidenshi.com/catalog/g/g117947/)（最安）, [Amazon](https://www.amazon.co.jp/dp/B0BB69CH2T) |
+| 2 | 6軸IMUセンサ | **MPU6050モジュール** (GY-521) | 1 | ¥220〜 | [Amazon 5個セット](https://www.amazon.co.jp/dp/B07MPBMRWD), [Yahoo!](https://store.shopping.yahoo.co.jp/officek-diga/3axes-gyrosensor.html) |
+| 3 | 電流/電圧センサ | **INA219モジュール** (オプション) | 1 | ¥400 | Amazon で「INA219」検索 |
 
 > ⚠️ INA219は2号機のコードでは未使用だが、バッテリー監視に有用。1号機コードにはある。
 
@@ -129,9 +129,9 @@ Nidec 24Hシリーズの仕様と完全に一致。
 
 | # | 部品名 | 型番/仕様 | 数量 | 参考価格 | 購入先候補 |
 |---|--------|-----------|:---:|------:|------------|
-| 6 | バッテリー | **LiPo 3S (11.1V) 500-800mAh** 小型 | 1 | ¥2,000-3,500 | Amazon, [ホビキン](https://hobbyking.com/) |
-| 7 | LiPo充電器 | **バランス充電器** (3S対応) | 1 | ¥3,000-5,000 | Amazon |
-| 8 | 5Vレギュレータ | **7805** (TO-220) | 1 | ¥50 | 秋月電子 |
+| 6 | バッテリー | **LiPo 3S (11.1V) 500-800mAh** 小型 | 1 | ¥2,000-3,500 | [Amazon「3S 11.1V 500mAh」](https://www.amazon.co.jp/s?k=3S+11.1V+500mAh+Lipo) |
+| 7 | LiPo充電器 | **バランス充電器** (3S対応) | 1 | ¥3,000-5,000 | [Amazon「Lipo 充電器 3S」](https://www.amazon.co.jp/s?k=Lipo+%E5%85%85%E9%9B%BB%E5%99%A8+3S) |
+| 8 | 5Vレギュレータ | **NJM7805FA** (TO-220) | 1 | ¥60 | [秋月電子](https://akizukidenshi.com/catalog/g/g108678/) |
 | 9 | 入力コンデンサ | **0.1µF セラミック** (C1) | 1 | ¥10 | 秋月電子 |
 | 10 | 出力コンデンサ | **33µF 電解** (C2) | 1 | ¥20 | 秋月電子 |
 | 11 | 分圧抵抗 R1 | **1.5kΩ** (バッテリー電圧監視) | 1 | ¥10 | 秋月電子 |
@@ -297,3 +297,54 @@ Nidec 24Hシリーズの仕様と完全に一致。
 - [GitHub: Nidec 24H制御ライブラリ](https://github.com/gcharles81/Nidec_24H_motor_control) — Arduinoコード例
 - [YouTube: Nidec 24H配線方法](https://www.youtube.com/watch?v=ZOyGFHkPrV4) — 配線解説動画
 - [Arduino Forum: Self Balancing + Nidec 24H](https://forum.arduino.cc/t/self-balancing-reaction-wheel-problems-with-nidec-24h-055m020/1139918) — 実用例
+
+---
+
+## 🛒 お買い物チェックリスト（購入先リンク付き）
+
+> コピペして使える購入チェックリスト。上から優先度順。
+
+### 最優先（リードタイム長い）
+
+- [ ] **モーター Nidec 24H055M020 ×4**（3個使用 + 予備1）
+  - 🏪 [Amazon.co.jp RUOHARD](https://www.amazon.co.jp/dp/B0FV3JQVN5) — ¥1,500〜/個、数日で届く
+  - 🏪 [Amazon.co.jp MESKE](https://www.amazon.co.jp/dp/B0D28GHSK1) — ¥1,500〜/個
+  - 🏪 [AliExpress（最安）](https://ja.aliexpress.com/item/1005005567692278.html) — ¥750〜/個、到着2-3週間
+  - ⚠️ **Dカット軸を選ぶ。はすば歯車シャフトは避ける**
+
+- [ ] **PCB基板発注**（ガーバーデータ: `hardware/gerber/` をZIP化してアップロード）
+  - 🏪 [JLCPCB](https://jlcpcb.com/) — $2〜5 + 送料、到着1-2週間
+  - 🏪 [PCBGOGO](https://www.pcbgogo.jp/) — 日本語対応
+
+- [ ] **LiPo 3S バッテリー 11.1V 500-800mAh ×1**
+  - 🏪 [Amazon「3S 11.1V 500mAh Lipo」で検索](https://www.amazon.co.jp/s?k=3S+11.1V+500mAh+Lipo)
+  - ⚠️ サイズを基板ブラケットに合わせて選定
+
+- [ ] **LiPo バランス充電器（3S対応）×1**
+  - 🏪 [Amazon「Lipo 充電器 3S」で検索](https://www.amazon.co.jp/s?k=Lipo+%E5%85%85%E9%9B%BB%E5%99%A8+3S)
+
+### 秋月電子でまとめ買い
+
+- [ ] **Raspberry Pi Pico W ×1** — [秋月 ¥1,240](https://akizukidenshi.com/catalog/g/g117947/)
+- [ ] **三端子レギュレータ NJM7805FA ×1** — [秋月 ¥60](https://akizukidenshi.com/catalog/g/g108678/)
+- [ ] **積層セラミックコンデンサ 0.1µF ×1** — 秋月 ¥10
+- [ ] **電解コンデンサ 33µF 25V ×1** — 秋月 ¥20
+- [ ] **カーボン抵抗 1.5kΩ ×1** — 秋月 ¥10
+- [ ] **カーボン抵抗 470Ω ×1** — 秋月 ¥10
+- [ ] **ピンヘッダ 1×40 ×2** — 秋月 ¥50/本
+- [ ] **ピンソケット 1×40 ×2** — 秋月 ¥80/本
+- [ ] **スライドスイッチ ×1** — 秋月 ¥50〜
+
+### Amazon でまとめ買い
+
+- [ ] **MPU6050 (GY-521) モジュール** — [Amazon 5個セット ¥1,100](https://www.amazon.co.jp/dp/B07MPBMRWD)
+- [ ] **シャフトハブ/カップリング 6mm ×3** — [Amazon「シャフトカップリング 6mm」](https://www.amazon.co.jp/s?k=%E3%82%B7%E3%83%A3%E3%83%95%E3%83%88%E3%82%AB%E3%83%83%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B0+6mm)
+- [ ] **M3ボルト・ナットセット** — Amazon「M3 ボルト ナット セット」¥500〜
+- [ ] **M2ボルト・ナットセット** — Amazon「M2 ボルト ナット セット」¥300〜
+- [ ] **M3 皿小ねじ ×40本** — Amazon ¥300〜（ホイールバランス用）
+- [ ] **AWG24 シリコンワイヤー** — Amazon ¥500〜
+- [ ] **タイラップ** — Amazon or 100均
+
+### オプション
+
+- [ ] **imo Lab. レシピ** — [BOOTH ¥800](https://booth.pm/ja/items/5992975)（正確な型番・組立手順入手）
