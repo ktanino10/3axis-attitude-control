@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2024-10-20T03:35:26Z",
+        "GenerationSoftware": {
+            "Application": "Fusion Electronics",
+            "Vendor": "Autodesk",
+            "Version": "9.7.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "PCB_PICO v20"
+        },
+        "Owner": "Imo G <goshoyoukyon@gmail.com>",
+        "Size": {
+            "X": 49,
+            "Y": 78.73
+        }
+    }
+}
