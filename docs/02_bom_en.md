@@ -17,7 +17,7 @@
 | IMU | MPU6050 | MPU6050 |
 | Current/Voltage sensor | INA219 ✅ | None (voltage only via ADC) |
 | Motor driver | PWM/DIR/BRAKE type ×3 | PWM/DIR/SS type ×3 |
-| Motors | Brushed DC ×3 | Brushed DC ×3 |
+| Motors | Driver-integrated BLDC ×3 | Driver-integrated BLDC ×3 |
 | Encoder | Available (unused) | Available (1 axis used) |
 | Bluetooth | ESP32 built-in SPP | External BT module required |
 | Yaw axis control | None (2-axis: Roll/Pitch) | Yes (3-axis: Roll/Pitch/Yaw) |

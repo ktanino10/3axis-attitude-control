@@ -226,7 +226,7 @@ Designing and manufacturing the physical structure.
 
 ---
 
-## 2. 3D Inverted Pendulum Model
+## 3. 3D Inverted Pendulum Model
 
 ### 2.1 System Definition
 

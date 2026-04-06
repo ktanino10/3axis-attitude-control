@@ -148,7 +148,7 @@ void loop() {
     Serial.print("Kp:");
     Serial.print((float)Kp, 1);
     Serial.print(",");
-    Serial.print("Ki");
+    Serial.print("Ki:");
     Serial.print((float)Ki, 1);
     Serial.print(",");
     Serial.print("Kd:");

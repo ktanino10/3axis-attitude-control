@@ -77,7 +77,7 @@ void setup() {
   cp5.getController("rollAdj") .getCaptionLabel().align(ControlP5.LEFT_OUTSIDE, ControlP5.LEFT_OUTSIDE).setPaddingX(0);
   pitchAdjSlider  = cp5.addSlider("pitchAdj").setPosition(390, 240).setSize(50, 15).setRange(-10, 10).setNumberOfTickMarks(2001).snapToTickMarks(true).setValue(pitchAdj).setLock(false) .setColorCaptionLabel(color(10)).setColorBackground(color(230, 230, 230)).setColorForeground(color(180, 180, 180)).setColorActive(color(140, 140, 140))  .setColorValueLabel(color(10, 10, 10)).setFont(createFont("", 12)).setDecimalPrecision(2);
   cp5.getController("pitchAdj") .getCaptionLabel().align(ControlP5.LEFT_OUTSIDE, ControlP5.LEFT_OUTSIDE).setPaddingX(0);
-  yawAdjSlider  = cp5.addSlider("yawAdj").setPosition(390, 270).setSize(50, 15).setRange(-80, 80).setNumberOfTickMarks(161).snapToTickMarks(true).setValue(pitchAdj).setLock(false) .setColorCaptionLabel(color(10)).setColorBackground(color(230, 230, 230)).setColorForeground(color(180, 180, 180)).setColorActive(color(140, 140, 140))  .setColorValueLabel(color(10, 10, 10)).setFont(createFont("", 12)).setDecimalPrecision(2);
+  yawAdjSlider  = cp5.addSlider("yawAdj").setPosition(390, 270).setSize(50, 15).setRange(-80, 80).setNumberOfTickMarks(161).snapToTickMarks(true).setValue(yawAdj).setLock(false) .setColorCaptionLabel(color(10)).setColorBackground(color(230, 230, 230)).setColorForeground(color(180, 180, 180)).setColorActive(color(140, 140, 140))  .setColorValueLabel(color(10, 10, 10)).setFont(createFont("", 12)).setDecimalPrecision(2);
   cp5.getController("yawAdj") .getCaptionLabel().align(ControlP5.LEFT_OUTSIDE, ControlP5.LEFT_OUTSIDE).setPaddingX(0);
 
   //knob
